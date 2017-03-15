@@ -1,0 +1,51 @@
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+EV_APPLICATION_IMP  eif_sleep              Interrupt:                   
+<00007FBB6DEAC0E8>  (From EXECUTION_ENVIRONMENT)
+                                           Operating system signal.      Fail
+-------------------------------------------------------------------------------
+EV_APPLICATION_IMP  eif_sleep                                           
+<00007FBB6DEAC0E8>  (From EXECUTION_ENVIRONMENT)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_APPLICATION_IMP  sleep @1                                            
+<00007FBB6DEAC0E8>  (From EXECUTION_ENVIRONMENT)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_APPLICATION_IMP  sleep @1                                            
+<00007FBB6DEAC0E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_APPLICATION_IMP  wait_for_input @1                                   
+<00007FBB6DEAC0E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_APPLICATION_IMP  process_event_queue @62
+<00007FBB6DEAC0E8>  (From EV_APPLICATION_I)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_APPLICATION_HANDLER
+                    process_application_event_queue @1
+<00007FBB6E01D3D8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_APPLICATION_HANDLER
+                    launch @4              
+<00007FBB6E01D3D8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_APPLICATION      internal_launch_application @3
+<00007FBB6E01C8B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_APPLICATION      launch @2                                           
+<00007FBB6E01C8B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_GRAPHIC          make @4                                             
+<00007FBB6E01C898>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+EB_KERNEL           make @4                                             
+<00007FBB6DED0518>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+EB_KERNEL           root's creation                                     
+<00007FBB6DED0518>                         Routine failure.              Exit
+-------------------------------------------------------------------------------

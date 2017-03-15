@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-11-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-11-0 http://www.eiffel.com/developers/xml/configuration-1-11-0.xsd" name="twr" uuid="1C336729-7164-46F2-8F10-CF04F9B583C9">
+	<target name="twr">
+		<root feature="make" class="APPLICATION"/>
+		<option warning="true">
+			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+		</option>
+		<setting name="console_application" value="true"/>
+		<precompile name="base_pre" location="$ISE_PRECOMP/base-safe.ecf"/>
+		<library name="base" location="$ISE_LIBRARY/library/base/base-safe.ecf"/>
+        <library name="espec" location="$ISE_LIBRARY/contrib/library/testing/framework/espec/library/espec-safe.ecf"/>
+		<cluster name="twr" location=".\" recursive="true">
+			<file_rule>
+				<exclude>/EIFGENs$</exclude>
+				<exclude>/.svn$</exclude>
+				<exclude>/CVS$</exclude>
+			</file_rule>
+		</cluster>
+	</target>
+</system>
